@@ -1,6 +1,6 @@
 name: deploy
-  on: push
-    push:
+on: 
+  push:
     branches:
       - master 
 jobs: 
