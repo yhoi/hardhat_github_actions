@@ -1,5 +1,8 @@
 name: deploy
-on: push 
+  on: push
+    push:
+    branches:
+      - master 
 jobs: 
   unit-test:
     name: Unit Test
