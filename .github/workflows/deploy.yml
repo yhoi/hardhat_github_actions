@@ -8,9 +8,7 @@ jobs:
     name: Unit Test
     runs-on: ubuntu-latest
     steps: 
-      - uses: actions/checkout@v3
-        with: 
-          repository: master
+      - uses: actions/checkout@master
       - name: Set Node.js 12.x
         uses: actions/setup-node@v3
         with: 
@@ -24,9 +22,7 @@ jobs:
     needs: unit-test
     runs-on: ubuntu-latest
     steps: 
-      - uses: actions/checkout@v3
-        with: 
-          repository: master
+      - uses: actions/checkout@master
       - name: Set Node.js 12.x
         uses: actions/setup-node@v3
         with:
